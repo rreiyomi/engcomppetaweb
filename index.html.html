@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peta</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #FFD1DC; /* Pale Pink */
+            color: #A51C30; /* Wine Red */
+            text-align: center;
+        }
+
+        .page {
+            display: none;
+            width: 100%;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 4rem; /* Bigger title */
+            margin-bottom: 20px;
+            color: #A51C30; /* Wine Red */
+        }
+
+        .header {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #A51C30; /* Wine Red */
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #A51C30; /* Wine Red */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .button:hover {
+                background-color: #8E172A; /* Darker Wine Red */
+            }
+
+        .description-container {
+            display: flex;
+            justify-content: center;
+            text-align: justify; /* Justified text */
+            gap: 20px;
+            margin: 20px auto;
+        }
+
+        .column {
+            flex: 1;
+            max-width: 45%;
+            font-size: 1.2rem; /* Bigger text */
+        }
+
+        .page-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 100%;
+            padding: 0 40px;
+        }
+
+        .single-column {
+            max-width: 800px; /* Center the content for single column */
+            margin: 0 auto;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <!-- First Page -->
+    <div id="page1" class="page active">
+        <h1 class="title">Educated Voting</h1>
+        <button class="button" onclick="showPage(2)">Start</button>
+    </div>
+
+    <!-- Second Page -->
+    <div id="page2" class="page">
+        <h1 class="header">The significance of voting in a democracy:</h1>
+        <div class="description-container">
+            <div class="column">
+                <p><strong>1. Expression of the People’s Will:</strong> Voting allows citizens to express their opinions on how they want to be governed. It is the primary mechanism for the public to choose leaders and hold them accountable.</p>
+                <p>
+                    <strong>2. Safeguarding Democracy:</strong> Regular, free, and fair elections are essential to maintaining a functioning democracy. By voting, citizens help sustain democratic institutions and prevent authoritarianism.
+                </p>
+                <p>
+                    <strong>3. Representation and Inclusion:</strong> Voting ensures diverse voices are heard and represented in government. It provides all citizens, regardless of background, with a say in policymaking.
+                </p>
+                <p><strong>4. Accountability of Leaders:</strong> Through voting, the public can reward or remove leaders based on their performance. This keeps elected officials responsible for their actions and decisions.</p>
+            </div>
+            <div class="column">
+                <p>
+                    <strong>5. Protecting Rights and Freedoms:</strong> Participating in elections helps uphold civil liberties and human rights by supporting candidates and policies that defend these principles.
+                </p>
+                <p>
+                    <strong>6. Influencing Policy:</strong> Elections give voters a direct role in shaping public policies on issues like healthcare, education, and the economy.
+                </p>
+                <p>
+                    <strong>7. Promoting Social Change:</strong> Voting can drive social progress by supporting reforms that reflect the evolving values and needs of society.
+                </p>
+                <p>
+                    <strong>8. Civic Duty and Responsibility:</strong> In a democracy, voting is not only a right but also a responsibility. It is a way for citizens to contribute to the common good and the future of their nation.
+                </p>
+            </div>
+        </div>
+        <div class="page-buttons">
+            <button class="button" onclick="showPage(1)">Back</button>
+            <button class="button" onclick="showPage(3)">Next</button>
+        </div>
+    </div>
+
+    <!-- Third Page -->
+    <div id="page3" class="page">
+        <h1 class="header">Characteristics of a Responsible Voter:</h1>
+        <div class="description-container">
+            <div class="column">
+                <p><strong>1. Learns About Candidates and Issues:</strong> Before voting, they research candidates’ backgrounds, policies, and past actions to make an informed decision instead of just following what others say.</p>
+                <p><strong>2. Thinks for Themselves:</strong> They form their own opinions by analyzing different viewpoints rather than blindly following friends, family, or social media trends. </p>
+                <p>
+                    <strong>3. Votes for the Good of Everyone:</strong> They consider how their vote will impact the whole community, not just themselves, and choose leaders who will create positive change for everyone.
+
+                </p>
+                <p><strong>4. Stay Updated:</strong> They keep up with current events, fact-check information, and avoid falling for fake news or misleading headlines.</p>
+                <p>
+                    <strong>5. Votes Every Time:</strong> They understand that all elections matter, from local to national, and make an effort to participate in every vote because even small changes can have a big impact.
+
+                </p>
+            </div>
+            <div class="column">
+                <p><strong>6. Respects Other Opinions:</strong> They listen to different perspectives and engage in discussions without disrespecting others, even if they disagree.</p>
+                <p><strong>7. Avoids Fake News:</strong> They verify information before sharing it and rely on credible sources instead of believing everything they see online.</p>
+                <p>
+                    <strong>8. Follows the Rules:</strong> They register properly, follow voting procedures, and respect the laws to ensure their vote counts.
+
+                </p>
+                <p>
+                    <strong>9. Wants Fair Elections:</strong> They support free and honest elections, stand against corruption and voter suppression, and believe that every vote should be counted equally.
+
+                </p>
+                <p><strong>10. Encourages Others to Vote:</strong> They remind family and friends about the importance of voting and help them understand why civic participation matters.</p>
+            </div>
+        </div>
+        <div class="page-buttons">
+            <button class="button" onclick="showPage(2)">Back</button>
+            <button class="button" onclick="showPage(4)">Next</button>
+        </div>
+    </div>
+
+    <!-- Fourth Page -->
+    <div id="page4" class="page">
+        <h1 class="header">Steps to ensure an informed decision before voting: </h1>
+        <div class="description-container">
+            <div class="column">
+                <p><strong>1. Understanding the election and ballot</strong></p>
+                <p><strong>2. Evaluate Policies, Not Just Personalities</strong></p>
+                <p><strong>3. Be wary of Misinformation</strong></p>
+                <p><strong>4. Consider the Integrity of Election Processes</strong></p>
+            </div>
+            <div class="column">
+                <p><strong>5. Consider Candidates Leadership and Decision-Making Skills</strong></p>
+                <p><strong>6. Read the Fine Print on Ballot Measures</strong></p>
+                <p><strong>7. Look at Judicial and Local Races</strong></p>
+                <p><strong>8. Fact Check Political Debates</strong></p>
+            </div>
+        </div>
+        <div class="page-buttons">
+            <button class="button" onclick="showPage(3)">Back</button>
+            <button class="button" onclick="showPage(5)">Next</button>
+        </div>
+    </div>
+
+    <!-- Fifth Page -->
+    <div id="page5" class="page">
+        <h1 class="header">How to avoid election misinformation and propaganda:</h1>
+        <div class="description-container">
+            <div class="column">
+                <p><strong>1. Research the person you are voting for to avoid electing a leader who is incompetent.  </strong></p>
+                <p>
+                    <strong>
+                        2. Do not fall under the influence of social media, as it may not be truthful.
+                    </strong>
+                </p>
+                <p><strong>3. Avoid spreading misinformation to prevent others from being misled about a leader.  </strong></p>
+                <p>
+                    <strong>
+                        4. Vote responsibly, as doing so helps secure a capable leader to guide the nation.
+                    </strong>
+                </p>
+                <p><strong>5. Do not simply listen to others; vote for someone you have thoroughly researched and who is a competent individual.</strong></p>
+            </div>
+        </div>
+        <div class="page-buttons">
+            <button class="button" onclick="showPage(4)">Back</button>
+            <button class="button" onclick="showPage(6)">Next</button>
+        </div>
+    </div>
+
+    <!-- Last Page -->
+    <div id="page6" class="page">
+        <h1 class="header">
+            Encouragement for fellow
+            citizens to vote wisely:
+        </h1>
+        <div class="single-column">
+            <p>
+                As students, we are frequently urged to engage in the democratic process by voting. But most of us may not grasp the importance of voting and how it can directly or indirectly affect our lives and the nation. In this essay, we shall discuss the importance of voting, the circumstances to take into consideration while casting our votes, and the role students can engage in order to determine the future of the nation.
+
+                Voting is a constitutional right that enables citizens to influence the way their nation is led. It is a way of making elected leaders accountable for what they do and ensuring that they act in the interests of the people who elect them. Voting is not only choosing a leader, but we are also influencing the policies and decisions that will impact our lives, our neighborhoods, and our nation.
+
+                So how do we know that we are voting intelligently? First, we need to do our homework and be educated about the candidates and the issues. We need to take the time to familiarize ourselves with each candidate's platform, their history, and their position on the issues most important to us. We need to think about the possible effects of each candidate's policies on our community and our nation.
+
+                Second, we need to judge the candidates according to their character, leadership ability, and vision for the future. We need to look at their ability to collaborate with others, their willingness to listen to diverse viewpoints, and their dedication to serving the public good.
+
+                Lastly, we need to base our decision on our values and principles. We need to think about what type of leader we wish to represent us and what type of nation we wish to create. We need to consider the type of future that we would like to create for ourselves, our children, and our communities.
+
+                As students, we play an important role in determining the destiny of our nation. We are the future leaders, and our votes will count towards determining where our country will go. We can make a difference by joining the electoral process so that we can make ourselves heard and be represented.
+
+                In short, voting is a very influential instrument that enables us to determine the future of our nation. We can make our votes count and our voices heard by doing our research, considering the candidates, and making informed choices. As students, we are important actors in determining the future of our country, and we must exercise our right to vote with responsibility and pride.
+            </p>
+        </div>
+        <div class="page-buttons">
+            <button class="button" onclick="showPage(5)">Previous Page</button>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageNumber) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            document.getElementById(`page${pageNumber}`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
